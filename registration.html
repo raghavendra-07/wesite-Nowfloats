@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="registration.css">
+        <script defer src="registration.js"
+        function register() {
+            window.location.href = "homeuser.html"; 
+        }></script>
+
+         
+    </head>
+    <body>     
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" placeholder="Enter a Username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" placeholder="Enter a Email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password" placeholder="Enter a Password" name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Confirm Password</label>
+                <input id="password2" placeholder="Confirm your Password" name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="d-flex flex-column">
+                <button type="submit" onclick="register()">Register</button>
+                <button type="submit" onclick="login()">Login</button>
+            </div>
+        </form>
+        
+        </div>
+        </div>
+    </body>
+</html>

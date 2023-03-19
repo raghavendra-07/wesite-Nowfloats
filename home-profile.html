@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+      }
+      .profile {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        border-radius: 50%;
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+      }
+      .info span {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .info p {
+        margin: 0;
+        font-size: 18px;
+      }
+      .description {
+        margin-top: 30px;
+        font-size: 18px;
+      }
+      .skill-list {
+        margin-top: 30px;
+        list-style: none;
+        padding: 0;
+      }
+      .skill-list li {
+        margin-bottom: 10px;
+      }
+      .skill-list li span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profile Picture">
+      <h1>John Doe</h1>
+      <div class="info">
+        <span>About:</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan sapien a erat dictum, vel bibendum turpis egestas. Donec elementum sagittis risus, eu viverra lorem laoreet sed.</p>
+      </div>
+      <div class="info">
+        <span>Activity:</span>
+        <p>Active member since 2020</p>
+      </div>
+      <div class="info">
+        <span>Education:</span>
+        <p>Bachelor's Degree in Computer Science</p>
+      </div>
+      <div class="description">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li><span>HTML:</span> Expert</li>
+          <li><span>CSS:</span> Expert</li>
+          <li><span>JavaScript:</span> Intermediate</li>
+          <li><span>Python:</span> Beginner</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="profile">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSrdB8rRgA1qgkw0ckcTrhIa0kpV2ILvbMWg&usqp=CAU" alt="Profile Picture">
+      <h1>Abraham</h1>
+      <div class="info">
+        <span>About:</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan sapien a erat dictum, vel bibendum turpis egestas. Donec elementum sagittis risus, eu viverra lorem laoreet sed.</p>
+      </div>
+      <div class="info">
+        <span>Activity:</span>
+        <p>Active member since 2010</p>
+      </div>
+      <div class="info">
+        <span>Education:</span>
+        <p>Bachelor's Degree in Information Technology</p>
+      </div>
+      <div class="description">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>HTML:<span id="html"></span></li>
+          <li>Expert:<span id="expert"></span></li>
+          <li>JavaScript:<span id="javascript"></span></li>
+          <li>Python:<span id="python"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+    
+    </div>
+    <script src="profile.js">
+      var username = localStorage.getItem("nameValue");
+
+// Set the retrieved data as the text content of the paragraph element
+document.getElementById("name").textContent = username;
+    </script>
+  </body>
+</html>

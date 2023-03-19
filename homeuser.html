@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LinkedIn Home</title>
+    <link rel="stylesheet" href="homeuser.css">
+  </head>
+  <body>
+      <div class="profile-logo-container">
+        <div id="logo">
+            <a href="home-profile.html">
+                <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvyhFoBVLsd0CwdPBuS-3Ymhket9aue6_PZxMOO9FaLGnSyWPCGIc2NfPgltH0aN9wz-Q&usqp=CAU" alt="LinkedIn">
+            </a>
+        </div>
+          <div id="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+          </div>
+      </div>
+      
+    <main>
+      <div id="post">
+        <div id="user-info">
+          <img src="https://picsum.photos/id/237/200/200" alt="Profile Picture">
+          <div id="user-name">John Doe</div>
+        </div>
+        <div id="post-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ipsum quis est sagittis, sit amet convallis neque consequat. Praesent in dolor a libero ultrices auctor. Nullam bibendum ipsum quis ante vestibulum, eget ullamcorper nibh aliquam.</p>
+          <img src="https://picsum.photos/id/10/600/400" alt="Post Image">
+        </div>
+        <div id="post-actions">
+          <div class="icon">
+            <i class="far fa-thumbs-up"></i>
+            <span>Like</span>
+          </div>
+          <div class="icon">
+            <i class="far fa-comment"></i>
+            <span>Comment</span>
+          </div>
+          <div class="icon">
+            <i class="far fa-share-square"></i>
+            <i class="bi bi-share"></i>
+            <span>Share</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    </div>
+    <head>
+    <div class="user-details-container">
+      <form>
+        <h1>User Details </h1>
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="UserName">
+        </div>
+        <div class="skill-list">
+            <label for="about">About:</label>
+            <textarea id="about" name="w3review" placeholder="Tell about yourself..!" rows="4" cols="25">
+             </textarea>
+        </div>
+        <div class="skill-list">
+            <label for="activity">Activity:</label>
+            <input id="activity" type="text" placeholder="What are your activities?">
+        </div>
+        <div class="skill-list">
+            <label for="education">Education:</label>
+            <input id="education" type="text" placeholder="Skills you earned">
+        </div>
+        <div>
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <label for="html">HTML:</label>
+                <input id="html" type="text">
+            </div>
+            <div class="skill-list">
+                <label for="css">CSS:</label>
+                <input id="css" type="text">
+            </div>
+            <div class="skill-list">
+                <label for="javascript">JavaScript:</label>
+                <input id="javascript" type="text">
+            </div>
+            <div class="skill-list">
+                <label for="python">Python:</label>
+                <input id="python" type="text">
+            </div>
+        </div>
+        <div>
+            <button id="submit-btn" onclick="saveInput()">Save</button>
+        </div>
+      
+      </form>
+    </div>
+  
+    <header>
+        <h1>Content Creation</h1>
+      </header>
+      <main>
+        <section>
+          <h2>Stories</h2>
+          <div id="stories-container"></div>
+        </section>
+        <section>
+          <h2>Pictures</h2>
+          <div id="pictures-container"></div>
+        </section>
+      </main>
+      <script src="homeuser.js"></script>
+  </body>
+</html>
